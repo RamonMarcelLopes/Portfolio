@@ -1,5 +1,11 @@
+import Header from '../../components/HeaderToBack';
 const About = () => {
-  return <div>SecPage</div>;
+  return (
+    <>
+      <Header />
+      <h1>About</h1>
+    </>
+  );
 };
 
 export default About;

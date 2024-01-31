@@ -1,7 +1,9 @@
+import Header from '../../components/HeaderToBack';
 const Contact = () => {
   return (
     <>
-      <h1>contact</h1>
+      <Header />
+      <h1>Contact</h1>
     </>
   );
 };
