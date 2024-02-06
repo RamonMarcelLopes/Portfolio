@@ -5,7 +5,7 @@ interface Languages {}
 export const LanguageContext = createContext<Languages | null>(null);
 
 interface LanguageContextProviderProps {
-  children: ReactNode; // Definindo o tipo da propriedade children como ReactNode
+  children: ReactNode;
 }
 
 export const LanguageContextProvider: React.FC<
