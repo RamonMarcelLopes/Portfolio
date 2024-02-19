@@ -1,16 +1,17 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
+import Header from '../../components/HeaderToBack';
+import './index.css';
 
 const Home = () => {
   let navigate: NavigateFunction = useNavigate();
 
   return (
-    <div>
-      <h1>home</h1>
-      <button onClick={() => navigate('/about')}>About</button>
-      <button onClick={() => navigate('/contact')}>Contact</button>
-      <button onClick={() => navigate('/skills')}>Skills</button>
-      <button onClick={() => navigate('/works')}>Works</button>
-    </div>
+    <>
+      <Header />
+      <div className="HomeContainer">
+        <h1>aqui e a home</h1>
+      </div>
+    </>
   );
 };
 
