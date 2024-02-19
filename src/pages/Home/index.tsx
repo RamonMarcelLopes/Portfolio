@@ -1,9 +1,9 @@
-import { NavigateFunction, useNavigate } from 'react-router-dom';
+// import { NavigateFunction, useNavigate } from 'react-router-dom';
 import Header from '../../components/HeaderToBack';
 import './index.css';
 
 const Home = () => {
-  let navigate: NavigateFunction = useNavigate();
+  // let navigate: NavigateFunction = useNavigate();
 
   return (
     <>

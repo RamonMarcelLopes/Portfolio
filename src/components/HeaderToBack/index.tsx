@@ -1,12 +1,12 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import { useLanguageContext } from '../../contexts/language';
-import { useThemeContext } from '../../contexts/dark-lightMode';
+// import { useLanguageContext } from '../../contexts/language';
+// import { useThemeContext } from '../../contexts/dark-lightMode';
 import './index.css';
 
 const Header = () => {
   let navigate: NavigateFunction = useNavigate();
-  let { language } = useLanguageContext() ?? {};
-  let { theme } = useThemeContext() ?? {};
+  // let { language } = useLanguageContext() ?? {};
+  // let { theme } = useThemeContext() ?? {};
   return (
     <>
       <header className="headerContainer">
