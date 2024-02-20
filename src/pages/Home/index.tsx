@@ -1,9 +1,15 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import Header from '../../components/HeaderToBack';
 import './index.css';
+import * as L from './language';
+import { useState } from 'react';
 
 const Home = () => {
   let navigate: NavigateFunction = useNavigate();
+  const en = L.textsEN;
+  const pt = L.TextsPT;
+
+  let [language, setLanguage] = useState(en);
 
   return (
     <>
@@ -12,27 +18,24 @@ const Home = () => {
         <div className="containerInformation">
           <div className="textInf">
             <div className="phraseHello">
-              <span>Hello, my name is </span>
+              <span>{language.helloText} </span>
             </div>
             <div className="containerNameHome">
               <h1>Ramon Lopes</h1>
             </div>
             <div className="containerStack">
-              <h2>A full-stack developer</h2>
+              <h2>{language.stackText}</h2>
             </div>
             <div className="containerInformationText">
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
-                venenatis purus, pellentesque tempor justo. Proin molestie
-                tellus vitae scelerisque lobortis. Aenean semper lacus nec massa
-                bibendum, nec cursus turpis finibus. Duis malesuada vel est id
-                faucibus. Etiam euismod condimentum augue sed ultrices. Vivamus
-                mollis venenatis consequat. Proin nec felis ornare, tincidunt
-                tortor eget, dictum arcu. Proin rhoncus quam vitae erat
-                vestibulum, sed accumsan ante vulputate. Aenean ullamcorper
-                vitae nisi non gravida. Aenean posuere tortor sit amet euismod
-                finibus. Phasellus viverra risus ante. Proin nec ipsum
-                efficitur, ultricies metus nec, tristique purus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                finibus fermentum nisi aliquam eleifend. Nunc metus arcu,
+                pretium vitae lorem et, fringilla placerat nunc. Pellentesque
+                condimentum commodo imperdiet. Nam volutpat augue tortor, nec
+                commodo nisl cursus sit amet. Nulla at vulputate justo. Sed
+                vitae nibh pulvinar, lacinia ex vestibulum, feugiat neque. Duis
+                ullamcorper efficitur fermentum. Duis et ultrices orci. Cras
+                euismod sapien vehicula erat egestas lobortis. Quisque dictum
               </h3>
             </div>
             <div className="containerButton">
