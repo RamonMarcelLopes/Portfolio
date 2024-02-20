@@ -9,7 +9,7 @@ const Home = () => {
   const en = L.textsEN;
   const pt = L.TextsPT;
 
-  let [language, setLanguage] = useState(en);
+  let [language, setLanguage] = useState<L.texts>(en);
 
   return (
     <>

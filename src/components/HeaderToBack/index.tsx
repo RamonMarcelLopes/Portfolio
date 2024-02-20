@@ -1,12 +1,18 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
+import * as L from './language';
 // import { useLanguageContext } from '../../contexts/language';
 // import { useThemeContext } from '../../contexts/dark-lightMode';
 import './index.css';
+import { useState } from 'react';
 
 const Header = () => {
   let navigate: NavigateFunction = useNavigate();
   // let { language } = useLanguageContext() ?? {};
   // let { theme } = useThemeContext() ?? {};
+  const en = L.TextsEn;
+  const pt = L.TextsPT;
+
+  let [language, setLanguage] = useState<L.language>(en);
   return (
     <>
       <header className="headerContainer">
@@ -18,19 +24,19 @@ const Header = () => {
         </div>
         <div className="containerOptions">
           <span className="text" onClick={() => navigate('/')}>
-            Home
+            {language.home}
           </span>
           <span className="text" onClick={() => navigate('/about')}>
-            About
+            {language.about}
           </span>
           <span className="text" onClick={() => navigate('/skills')}>
-            Skills
+            {language.skills}
           </span>
           <span className="text" onClick={() => navigate('/works')}>
-            Works
+            {language.works}
           </span>
           <span className="text" onClick={() => navigate('/contact')}>
-            Contact
+            {language.contact}
           </span>
         </div>
       </header>

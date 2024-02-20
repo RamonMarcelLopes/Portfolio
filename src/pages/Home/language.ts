@@ -1,4 +1,4 @@
-type texts = {
+export type texts = {
   helloText: string;
   stackText: string;
 };
