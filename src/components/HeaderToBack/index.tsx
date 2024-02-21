@@ -12,6 +12,8 @@ const Header = () => {
   const en = L.TextsEn;
   const pt = L.TextsPT;
 
+  pt;
+
   let [language, setLanguage] = useState<L.language>(en);
   return (
     <>
