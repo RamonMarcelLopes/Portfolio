@@ -28,6 +28,7 @@
   justify-content: center;
   height: 55%;
   width: 10%;
+  cursor: pointer;
 }
 .letterR {
   color: #ff0642;

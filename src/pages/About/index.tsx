@@ -1,13 +1,18 @@
 import './index.css';
+import * as L from './language';
 import Header from '../../components/HeaderToBack';
+import { useState } from 'react';
 const About = () => {
+  const pt: L.Texts = L.textPT;
+  const en: L.Texts = L.textEN;
+  const [language, setlanguage] = useState<L.Texts>(en);
   return (
     <>
       <Header />
       <div className="AboutContainer">
         <div className="AboutTitleContainer">
           <div className="tracado"></div>
-          <h1 className="About">About Me</h1>
+          <h1 className="About">{language.about}</h1>
           <div className="tracado"></div>
         </div>
         <div className="ImageAndInformationContainer">

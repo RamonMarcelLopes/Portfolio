@@ -19,7 +19,7 @@ const Header = () => {
     <>
       <header className="headerContainer">
         <div className="containerName">
-          <div className="letterRContainer">
+          <div onClick={() => navigate('/')} className="letterRContainer">
             <span className="letterR">R</span>
           </div>
           <h1 className="name">Ramon Lopes</h1>
