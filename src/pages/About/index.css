@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+.AboutContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 1080px;
+  width: 1920px;
+  background-color: #03060f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.AboutTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 77%;
+  height: 15%;
+
+  color: #fff;
+}
+.About {
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+}
+.tracado {
+  background-color: #555f65;
+  width: 30%;
+  height: 5%;
+}
+.ImageAndInformationContainer {
+  display: flex;
+  height: 40%;
+  width: 77%;
+}
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.informationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5%;
+  padding: 5%;
+  flex-direction: column;
+
+  width: 70%;
+  height: 100%;
+  color: #555f65;
+}
+.My-img {
+  border-radius: 10px;
+  position: absolute;
+  right: -20px;
+  top: 6%;
+}
+.imgTracado {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  height: 89%;
+  width: 89%;
+  border: 3px solid #ff0642;
+  position: relative;
+  border-radius: 10px;
+}
