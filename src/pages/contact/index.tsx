@@ -23,9 +23,9 @@ const Contact = () => {
       <Header />
       <div className="FullContainerContact">
         <div className="ContainerContact">
-          <div className="Tracado">.</div>
+          <div className="Tracado"></div>
           <h1 className="Contact">{language.mycontact}</h1>
-          <div className="Tracado">.</div>
+          <div className="Tracado"></div>
         </div>
         <div className="InformationContactContainer">
           <div className="ContactMe">

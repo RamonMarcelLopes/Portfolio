@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+
+.containerAllSkills {
+  width: 1920px;
+  height: 1080px;
+  background-color: #03060f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+}
+.Tracado {
+  background-color: #555f65;
+  width: 30%;
+  height: 5%;
+}
+.mySkillsTitleContainer {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-around;
+  height: 10%;
+}
+.MySkillsH1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+}
+.mySkills {
+  height: 60%;
+  width: 70%;
+  background-color: #555f65;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.imgIc {
+  height: 120px;
+  width: 120px;
+  margin: 2%;
+}
