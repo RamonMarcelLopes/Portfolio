@@ -48,3 +48,18 @@
     height: 900px;
   }
 }
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .containerAllSkills {
+    height: 1024px;
+    width: 768px;
+  }
+  .mySkills {
+    overflow-y: auto;
+  }
+
+  .imgIc {
+    height: 100px;
+    width: 100px;
+    margin: 2%;
+  }
+}

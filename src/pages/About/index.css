@@ -81,3 +81,36 @@
     width: 40%;
   }
 }
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .AboutContainer {
+    height: 1024px;
+    width: 768px;
+  }
+  .ImageContainer {
+    height: 70%;
+    width: 43%;
+  }
+  .informationContainer {
+    height: 30%;
+    width: 90%;
+    gap: 0;
+    padding: 0;
+  }
+  .ImageAndInformationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .My-img {
+    height: 100%;
+    width: 100%;
+  }
+  .imgTracado {
+    height: 75%;
+    width: 100%;
+  }
+  .h3Information {
+    font-size: 100%;
+  }
+}

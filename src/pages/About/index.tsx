@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div className="informationContainer">
             <h1>Lore ipsum</h1>
-            <h3>
+            <h3 className="h3Information">
               Lorem ipsum dolor sit amet consectetur. Urna sed eu felis sagittis
               etiam id. Mattis fermentum congue odio etiam duis in. Elementum
               nibh fames amet nunc. Amet tellus tortor lacus volutpat consequat

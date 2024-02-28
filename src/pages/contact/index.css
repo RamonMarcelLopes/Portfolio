@@ -95,3 +95,18 @@ a:visited {
     width: 50%;
   }
 }
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .FullContainerContact {
+    height: 1024px;
+    width: 768px;
+  }
+  .Contact {
+    font-size: 35px;
+  }
+  .ContainerContact {
+    width: 80%;
+  }
+  .InformationContactContainer {
+    width: 70%;
+  }
+}

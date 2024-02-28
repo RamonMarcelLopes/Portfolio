@@ -51,3 +51,21 @@
     width: 13%;
   }
 }
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .name {
+    display: none;
+  }
+  .letterRContainer {
+    width: 50%;
+  }
+  .containerOptions {
+    gap: 1.5rem;
+    width: 85%;
+  }
+  .text {
+    margin-left: 15px;
+  }
+  .containerName {
+    width: 15%;
+  }
+}

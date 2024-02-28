@@ -126,3 +126,42 @@
     box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
   }
 }
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .HomeContainer {
+    height: 1024px;
+    width: 768px;
+  }
+  .boxShadow {
+    width: 80%;
+    height: 40%;
+  }
+  .image {
+    width: 40%;
+    height: 70%;
+  }
+  .myimage {
+    height: 95%;
+    width: 95%;
+  }
+  .textInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 90%;
+    width: 46%;
+  }
+  .meetButton {
+    width: 45%;
+    border-radius: 10px;
+  }
+  .containerStack {
+    height: 5%;
+  }
+  .containerInformationText {
+    height: 30%;
+  }
+  .h3AboutInformation {
+    font-size: 100%;
+  }
+}

@@ -27,7 +27,7 @@ const Home = () => {
               <h2>{language.stackText}</h2>
             </div>
             <div className="containerInformationText">
-              <h3>
+              <h3 className="h3AboutInformation">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 finibus fermentum nisi aliquam eleifend. Nunc metus arcu,
                 pretium vitae lorem et, fringilla placerat nunc. Pellentesque
