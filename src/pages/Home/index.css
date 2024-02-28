@@ -106,3 +106,23 @@
   -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
   box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
 }
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .HomeContainer {
+    height: 900px;
+    width: 1440px;
+  }
+  .meetButton {
+    width: 25%;
+  }
+  .boxShadow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 10px;
+    height: 70%;
+    width: 93%;
+    -webkit-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+    box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+  }
+}

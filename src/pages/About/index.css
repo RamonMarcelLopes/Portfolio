@@ -68,3 +68,16 @@
   position: relative;
   border-radius: 10px;
 }
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .AboutContainer {
+    height: 900px;
+    width: 1440px;
+  }
+  .imgTracado {
+    height: 87%;
+    width: 98%;
+  }
+  .ImageContainer {
+    width: 40%;
+  }
+}
