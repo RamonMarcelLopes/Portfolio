@@ -1,6 +1,5 @@
 import './index.css';
 import * as T from '../../mocks/skills';
-import * as L from './language';
 import Header from '../../components/HeaderToBack';
 import { useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';

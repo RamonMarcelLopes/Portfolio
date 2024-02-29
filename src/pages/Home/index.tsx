@@ -1,7 +1,6 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import Header from '../../components/HeaderToBack';
 import './index.css';
-import * as L from './language';
 import { useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';
 
