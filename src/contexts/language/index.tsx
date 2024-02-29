@@ -1,8 +1,16 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+} from 'react';
+import * as Ln from './languages';
 
 interface LanguagesValues {
   language: languages;
-  changeLanguage: Function;
+  changeLanguage: Function | any;
+  interfaceLanguage: Ln.Texts;
 }
 type languages = 'pt-BR' | 'en-US';
 type argsChangeFunction = 1 | 2;
@@ -16,7 +24,7 @@ interface LanguageContextProviderProps {
 export const LanguageContextProvider: React.FC<
   LanguageContextProviderProps
 > = ({ children }) => {
-  let [language, setlanguage] = useState<languages>('pt-BR');
+  let [language, setlanguage] = useState<languages>('en-US');
 
   let changeLanguage: Function = (arg: argsChangeFunction) => {
     switch (arg) {
@@ -29,8 +37,20 @@ export const LanguageContextProvider: React.FC<
         break;
     }
   };
+  let [interfaceLanguage, setInterfaceLanguage] = useState(Ln.textsEN);
+  useEffect(() => {
+    if (language == 'pt-BR') {
+      setInterfaceLanguage(Ln.textsPT);
+    }
+    if (language == 'en-US') {
+      setInterfaceLanguage(Ln.textsEN);
+    }
+  }, [language]);
+
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage }}>
+    <LanguageContext.Provider
+      value={{ interfaceLanguage, changeLanguage, language }}
+    >
       {children}
     </LanguageContext.Provider>
   );

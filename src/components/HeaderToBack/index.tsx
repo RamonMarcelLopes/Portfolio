@@ -1,20 +1,23 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import * as L from './language';
-// import { useLanguageContext } from '../../contexts/language';
-// import { useThemeContext } from '../../contexts/dark-lightMode';
+import { useLanguageContext } from '../../contexts/language';
+import { Texts } from '../../contexts/language/languages';
+import DropdownMenu from '../dropDownMenu';
+//import { useThemeContext } from '../../contexts/dark-lightMode';
 import './index.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   let navigate: NavigateFunction = useNavigate();
-  // let { language } = useLanguageContext() ?? {};
+  let { interfaceLanguage, changeLanguage } = useLanguageContext() ?? {};
   // let { theme } = useThemeContext() ?? {};
-  const en = L.TextsEn;
-  const pt = L.TextsPT;
 
-  pt;
+  let ff = () => {
+    changeLanguage(2);
+  };
+  let ff2 = () => {
+    changeLanguage(1);
+  };
 
-  let [language, setLanguage] = useState<L.language>(en);
   return (
     <>
       <header className="headerContainer">
@@ -26,19 +29,22 @@ const Header = () => {
         </div>
         <div className="containerOptions">
           <span className="text" onClick={() => navigate('/')}>
-            {language.home}
+            {interfaceLanguage?.Headerhome}
           </span>
           <span className="text" onClick={() => navigate('/about')}>
-            {language.about}
+            {interfaceLanguage?.Headerabout}
           </span>
           <span className="text" onClick={() => navigate('/skills')}>
-            {language.skills}
+            {interfaceLanguage?.Headerskills}
           </span>
           <span className="text" onClick={() => navigate('/works')}>
-            {language.works}
+            {interfaceLanguage?.Headerworks}
           </span>
           <span className="text" onClick={() => navigate('/contact')}>
-            {language.contact}
+            {interfaceLanguage?.Headercontact}
+          </span>
+          <span className="text">
+            <DropdownMenu />
           </span>
         </div>
       </header>

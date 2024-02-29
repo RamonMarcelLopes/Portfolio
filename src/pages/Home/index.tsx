@@ -3,14 +3,11 @@ import Header from '../../components/HeaderToBack';
 import './index.css';
 import * as L from './language';
 import { useState } from 'react';
+import { useLanguageContext } from '../../contexts/language';
 
 const Home = () => {
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   let navigate: NavigateFunction = useNavigate();
-  const en = L.textsEN;
-  const pt = L.TextsPT;
-
-  let [language, setLanguage] = useState<L.texts>(en);
-
   return (
     <>
       <Header />
@@ -18,13 +15,13 @@ const Home = () => {
         <div className="containerInformation">
           <div className="textInf">
             <div className="phraseHello">
-              <span>{language.helloText} </span>
+              <span>{interfaceLanguage?.helloText} </span>
             </div>
             <div className="containerNameHome">
               <h1>Ramon Lopes</h1>
             </div>
             <div className="containerStack">
-              <h2>{language.stackText}</h2>
+              <h2>{interfaceLanguage?.stackText}</h2>
             </div>
             <div className="containerInformationText">
               <h3 className="h3AboutInformation">

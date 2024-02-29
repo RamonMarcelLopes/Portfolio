@@ -1,9 +1,9 @@
 import './index.css';
 import Header from '../../components/HeaderToBack';
-import * as L from './language';
-import { useState } from 'react';
+import { useLanguageContext } from '../../contexts/language';
 
 const Contact = () => {
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   let sendEmail = (): void => {
     const enderecoEmail = 'ramonlopesdev@gmail.com';
     const link = `mailto:${enderecoEmail}`;
@@ -15,21 +15,18 @@ const Contact = () => {
     window.open(link);
   };
 
-  let en: L.Texts = L.textEN;
-  let pt: L.Texts = L.textPT;
-  let [language, setLanguage] = useState<L.Texts>(en);
   return (
     <>
       <Header />
       <div className="FullContainerContact">
         <div className="ContainerContact">
           <div className="Tracado"></div>
-          <h1 className="Contact">{language.mycontact}</h1>
+          <h1 className="Contact">{interfaceLanguage?.mycontact}</h1>
           <div className="Tracado"></div>
         </div>
         <div className="InformationContactContainer">
           <div className="ContactMe">
-            <h1>{language.contactMe}</h1>
+            <h1>{interfaceLanguage?.contactMe}</h1>
           </div>
           <div className="ContainerContacts">
             <div className="LnContainer">
