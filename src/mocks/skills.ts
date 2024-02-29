@@ -5,13 +5,13 @@ export type Technology = {
 };
 export let technology: Technology[] = [
   {
-    id: 'a9d83b47',
+    id: 'a9d8888b47',
     name: 'css3',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
   },
 
   {
-    id: 'a9d83b47',
+    id: 'b9d83b47',
     name: 'Express.js',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
   },

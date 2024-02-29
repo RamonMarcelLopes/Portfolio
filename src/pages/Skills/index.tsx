@@ -19,11 +19,7 @@ const Skills = () => {
         </div>
         <div className="mySkills">
           {skills.map((e: T.Technology) => {
-            return (
-              <>
-                <img key={e.id} className="imgIc" src={e.img} alt="" />
-              </>
-            );
+            return <img key={e.id} className="imgIc" src={e.img} alt="" />;
           })}
         </div>
       </div>
