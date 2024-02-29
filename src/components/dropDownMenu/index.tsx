@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { ReactEventHandler, SyntheticEvent, useState } from 'react';
+import { useLanguageContext } from '../../contexts/language';
 
 const DropdownMenu = () => {
+  let { changeLanguage, language } = useLanguageContext() ?? {};
   const [menuAberto, setMenuAberto] = useState(false);
-  const [idiomaSelecionado, setIdiomaSelecionado] = useState('pt-BR');
+  const [idiomaSelecionado, setIdiomaSelecionado] = useState(language);
   const bandeiraPtBr = 'https://static.significados.com.br/flags/br.svg';
   const bandeiraEnUs = 'https://static.significados.com.br/flags/us.svg';
 
@@ -14,6 +16,11 @@ const DropdownMenu = () => {
     setIdiomaSelecionado(idioma);
     setMenuAberto(false);
   };
+  if (idiomaSelecionado == 'en-US') {
+    changeLanguage(2);
+  } else if (idiomaSelecionado == 'pt-BR') {
+    changeLanguage(1);
+  }
 
   return (
     <div className="dropdown">

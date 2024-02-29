@@ -8,15 +8,8 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   let navigate: NavigateFunction = useNavigate();
-  let { interfaceLanguage, changeLanguage } = useLanguageContext() ?? {};
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   // let { theme } = useThemeContext() ?? {};
-
-  let ff = () => {
-    changeLanguage(2);
-  };
-  let ff2 = () => {
-    changeLanguage(1);
-  };
 
   return (
     <>
