@@ -10,6 +10,7 @@ export type Texts = {
   Headerskills: string;
   Headerworks: string;
   Headercontact: string;
+  meetMe: string;
 };
 
 export let textsEN: Texts = {
@@ -24,6 +25,7 @@ export let textsEN: Texts = {
   Headerskills: 'Skills',
   Headerworks: 'Works',
   Headercontact: 'Contact',
+  meetMe: 'Meet me',
 };
 
 export let textsPT: Texts = {
@@ -38,4 +40,5 @@ export let textsPT: Texts = {
   Headerskills: 'Proficiências',
   Headerworks: 'Trabalhos',
   Headercontact: 'Contato',
+  meetMe: 'Encontre-me ',
 };

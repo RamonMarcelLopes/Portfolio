@@ -39,7 +39,7 @@ const Home = () => {
                 className="meetButton"
                 onClick={() => navigate('/contact')}
               >
-                meet me
+                {interfaceLanguage?.meetMe}
               </button>
             </div>
           </div>

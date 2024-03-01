@@ -70,19 +70,22 @@
   cursor: pointer;
   color: #555f65;
   transition-duration: 0.5s;
+  text-decoration: underline;
 }
 .canClick:hover {
   color: #fff;
 }
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:link {
   color: #555f65;
+  text-decoration: underline;
 }
 
 a:visited {
   color: #555f65;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1440px) and (max-height: 900px) {
