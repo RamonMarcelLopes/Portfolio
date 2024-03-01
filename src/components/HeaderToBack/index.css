@@ -50,6 +50,9 @@
   .letterRContainer {
     width: 13%;
   }
+  .text {
+    margin-left: 30px;
+  }
 }
 @media screen and (max-width: 768px) and (max-height: 1024px) {
   .name {
@@ -63,7 +66,7 @@
     width: 85%;
   }
   .text {
-    margin-left: 15px;
+    margin-left: 5px;
   }
   .containerName {
     width: 15%;
