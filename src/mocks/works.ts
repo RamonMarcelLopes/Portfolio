@@ -10,8 +10,8 @@ export type Work = {
   github: string;
   hasDeploy: boolean;
   deployLink: string;
-  technologiesFront: Technology[];
-  technologiesBack: Technology[];
+  technologiesFront?: Technology[];
+  technologiesBack?: Technology[];
 };
 
 export const works: Work[] = [
