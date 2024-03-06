@@ -1,7 +1,7 @@
 import React, { ReactEventHandler, SyntheticEvent, useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';
 
-const DropdownMenu = () => {
+const DropDownMenu = () => {
   let { changeLanguage, language } = useLanguageContext() ?? {};
   const [menuAberto, setMenuAberto] = useState(false);
   const [idiomaSelecionado, setIdiomaSelecionado] = useState(language);
@@ -54,4 +54,4 @@ const DropdownMenu = () => {
   );
 };
 
-export default DropdownMenu;
+export default DropDownMenu;

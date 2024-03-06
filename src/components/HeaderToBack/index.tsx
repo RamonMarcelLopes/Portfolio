@@ -1,7 +1,7 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import { useLanguageContext } from '../../contexts/language';
 import { Texts } from '../../contexts/language/languages';
-import DropdownMenu from '../DropDownMenu';
+import DropDownMenu from '../DropDownMenu';
 //import { useThemeContext } from '../../contexts/dark-lightMode';
 import './index.css';
 import { useEffect, useState } from 'react';
@@ -37,7 +37,7 @@ const Header = () => {
             {interfaceLanguage?.Headercontact}
           </span>
           <span className="text">
-            <DropdownMenu />
+            <DropDownMenu />
           </span>
         </div>
       </header>
