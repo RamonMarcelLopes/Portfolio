@@ -1,6 +1,7 @@
 import Header from '../../components/HeaderToBack';
 import './index.css';
 import WorkCard from '../../components/WorkCard';
+import * as W from '../../mocks/works';
 const Works = () => {
   return (
     <>
@@ -12,8 +13,20 @@ const Works = () => {
           <div className="TracadoWorks">.</div>
         </div>
         <div className="MyWorksDisplay">
-          {Array.from({ length: 6 }).map((e) => {
-            return <WorkCard />;
+          {W.works.map((e: W.Work) => {
+            return (
+              <WorkCard
+                title={e.title}
+                img={e.img}
+                hasDeploy={e.hasDeploy}
+                deployLink={e.deployLink}
+                github={e.github}
+                technologiesFront={e.technologiesFront}
+                key={e.id}
+                technologiesBack={[]}
+                id={e.id}
+              />
+            );
           })}
         </div>
       </div>
