@@ -17,25 +17,39 @@ const WorkCard = ({
     window.open(github, '_blank');
   };
   let handleClickDeploy = () => {
-    window.open(deployLink, '_blank');
+    hasDeploy
+      ? window.open(deployLink, '_blank')
+      : console.log(
+          `sorry we don't have deploy for this app, opening see more `
+        );
   };
+  let debug = () => {};
   return (
     <>
       <div className="cardContainer">
         <div className="ContainerText">
           <h2 className="TextTitle">{title}</h2>
           <div className="ContainerImgTechnology">
-            {technologiesFront != undefined
-              ? technologiesFront?.map((t: W.Technology) => {
-                  return (
-                    <img
-                      className="technologyImg"
-                      src={t.img}
-                      alt={`imagem do ${t.name} `}
-                    />
-                  );
-                })
-              : null}
+            {technologiesFront?.map((t: W.Technology) => {
+              return (
+                <img
+                  key={t.name}
+                  className="technologyImg"
+                  src={t.img}
+                  alt={`imagem do ${t.name} `}
+                />
+              );
+            })}
+            {technologiesBack?.map((bt: W.Technology) => {
+              return (
+                <img
+                  key={bt.name}
+                  className="technologyImg"
+                  src={bt.img}
+                  alt={`imagem do ${bt.name} `}
+                />
+              );
+            })}
           </div>
         </div>
 
@@ -52,14 +66,18 @@ const WorkCard = ({
             <span className="akar-icons--github-fill"></span>
           </div>
 
-          {hasDeploy ? (
-            <div className="ContainerDeploy" onClick={handleClickDeploy}>
-              <span className="TextGitWeb">Deploy</span>
-              <span className="svgContainer"></span>
-            </div>
-          ) : null}
+          <div className="ContainerDeploy" onClick={handleClickDeploy}>
+            {hasDeploy ? (
+              <>
+                <span className="TextGitWeb">Deploy</span>
+                <span className="svgContainer"></span>
+              </>
+            ) : null}
+          </div>
           <div className="ContainerButton">
-            <button className="seeMore">See More</button>
+            <button className="seeMore" onClick={debug}>
+              See More
+            </button>
           </div>
         </div>
       </div>

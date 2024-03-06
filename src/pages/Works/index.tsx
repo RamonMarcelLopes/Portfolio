@@ -23,7 +23,7 @@ const Works = () => {
                 github={e.github}
                 technologiesFront={e.technologiesFront}
                 key={e.id}
-                technologiesBack={[]}
+                technologiesBack={e.technologiesBack}
                 id={e.id}
               />
             );
