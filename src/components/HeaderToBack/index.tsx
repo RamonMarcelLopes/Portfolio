@@ -1,7 +1,7 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import { useLanguageContext } from '../../contexts/language';
 import { Texts } from '../../contexts/language/languages';
-import DropDownMenu from '../DropDownMenu';
+import DropDownMenu from '../LanguageMenu';
 //import { useThemeContext } from '../../contexts/dark-lightMode';
 import './index.css';
 import { useEffect, useState } from 'react';
