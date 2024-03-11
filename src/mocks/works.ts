@@ -42,7 +42,7 @@ export const works: Work[] = [
   },
   {
     id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
-    title: 'Jaca gallery',
+    title: 'Jaca gallery2',
     img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
     github: 'https://github.com/images-organization/myimages',
     hasDeploy: false,
@@ -67,7 +67,7 @@ export const works: Work[] = [
   },
   {
     id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
-    title: 'Jaca gallery',
+    title: 'Jaca gallery3',
     img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
     github: 'https://github.com/images-organization/myimages',
     hasDeploy: false,
@@ -92,7 +92,7 @@ export const works: Work[] = [
   },
   {
     id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
-    title: 'Jaca gallery',
+    title: 'Jaca gallery4',
     img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
     github: 'https://github.com/images-organization/myimages',
     hasDeploy: true,
@@ -117,7 +117,7 @@ export const works: Work[] = [
   },
   {
     id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
-    title: 'Jaca gallery',
+    title: 'Jaca gallery5',
     img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
     github: 'https://github.com/images-organization/myimages',
     hasDeploy: false,

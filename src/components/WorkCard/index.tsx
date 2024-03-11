@@ -1,9 +1,12 @@
 import './index.css';
 import * as W from '../../mocks/works';
 import git from '../../../public/git.svg';
-import web from '../../../public/web.svg';
+import web2 from '../../../public/web2.svg';
 import { useState } from 'react';
 import { redirect } from 'react-router-dom';
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root');
 const WorkCard = ({
   title,
   img,
@@ -21,11 +24,103 @@ const WorkCard = ({
       ? window.open(deployLink, '_blank')
       : console.log(
           `sorry we don't have deploy for this app, opening see more `
-        );
+        ),
+      openModal();
   };
-  let debug = () => {};
+  let [transition, setTransition] = useState('');
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+    setTimeout(() => {
+      setTransition('modalOpen');
+    }, 100);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+    setTimeout(() => {
+      setTransition('modalClose');
+    }, 100);
+  };
   return (
     <>
+      {/*  */}
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={closeModal}
+        contentLabel="example modal"
+        overlayClassName={`modal-overlay ${transition}`}
+        className="modal-content"
+      >
+        <div className="containerAllModal">
+          <div className="imageModalContainer">
+            <img
+              src={img}
+              alt={`imagem do projeto ${title}`}
+              className="imgForModal"
+            />
+          </div>
+          <div className="informationModalContainer">
+            <div className="containerTitleModalAndClose">
+              <div className="tittleModalContainer">
+                <h1 className="h1TitleProject">{title}</h1>
+              </div>
+              <div className="closeModalContainer" onClick={closeModal}>
+                <h4 className="xToClose">X</h4>
+              </div>
+            </div>
+            <div className="containerUsedTechnologies">
+              <h4 className="h4UsedTechnologies">used technologies</h4>
+              <div className="imagesFromMap">
+                {technologiesFront?.map((tf: W.Technology) => {
+                  return (
+                    <>
+                      <img
+                        className="imgTechnologyToShowOnModal"
+                        src={tf.img}
+                        alt={tf.name}
+                        key={tf.name}
+                      />
+                    </>
+                  );
+                })}
+                {technologiesBack?.map((tb: W.Technology) => {
+                  return (
+                    <>
+                      <img
+                        className="imgTechnologyToShowOnModal"
+                        src={tb.img}
+                        alt={tb.name}
+                        key={tb.name}
+                      />
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="containerDescriptionProject">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                debitis optio iste, perferendis magni voluptas quis, quo tempore
+                accusamus ea autem fuga sequi. Velit blanditiis ut sed, vitae
+                aut nesciunt.
+              </span>
+            </div>
+            <div className="containerButtonGitDeploy">
+              <button onClick={handleClickGit} className="buttonLink">
+                GitHub
+                <img className="logos" src={git} alt="icon of github" />
+              </button>
+              <button onClick={handleClickDeploy} className="buttonLink">
+                Deploy
+                <img className="logos" src={web2} alt="random icon of web" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </Modal>
+      {/*  */}
       <div className="cardContainer">
         <div className="ContainerText">
           <h2 className="TextTitle">{title}</h2>
@@ -75,7 +170,7 @@ const WorkCard = ({
             ) : null}
           </div>
           <div className="ContainerButton">
-            <button className="seeMore" onClick={debug}>
+            <button className="seeMore" onClick={() => openModal()}>
               See More
             </button>
           </div>

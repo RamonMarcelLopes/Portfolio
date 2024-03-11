@@ -136,3 +136,160 @@
 .ContainerGithub:hover .TextGitWeb {
   color: #fff;
 }
+/* modal */
+.modal-overlay {
+  background-color: #000000d0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+.modal-content {
+  width: 50%;
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+  height: 45%;
+}
+.modalOpen {
+  opacity: 1;
+}
+.modalClose {
+  opacity: 0;
+}
+.containerAllModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  height: 100%;
+  width: 100%;
+}
+.imageModalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+.informationModalContainer {
+  height: 100%;
+  width: 35%;
+  padding: 10px;
+}
+.imgForModal {
+  height: auto;
+  width: 90%;
+  border-radius: 10px;
+}
+.containerTitleModalAndClose {
+  display: flex;
+  height: 15%;
+  width: 100%;
+
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.tittleModalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 92%;
+}
+.h1TitleProject {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+}
+.closeModalContainer {
+  position: absolute;
+  top: 260px;
+  right: 475px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff0642;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.closeModalContainer:hover {
+  background-color: #ff0640c0;
+}
+.xToClose {
+  color: #fff;
+}
+.imgTechnologyToShowOnModal {
+  width: 25px;
+  height: 25px;
+}
+.containerUsedTechnologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ff0642;
+  height: 13%;
+  border-radius: 10px;
+  margin: 10px 0px 0px 0px;
+}
+.h4UsedTechnologies {
+  color: #c5c5c5;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 2px 0px 0px 5px;
+}
+.imagesFromMap {
+  margin: 2px 0px 0px 5px;
+}
+.containerDescriptionProject {
+  width: 100%;
+  height: 40%;
+
+  margin: 10px 0px 0px 0px;
+  color: #fff;
+  font-family: 'poppins';
+  font-weight: 400;
+}
+.containerButtonGitDeploy {
+  height: 20%;
+
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonLink {
+  height: 50%;
+  width: 40%;
+  border: 1px solid #ff0642;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  color: #c5c5c5;
+  font-family: 'Poppins';
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  outline: none;
+}
+.buttonLink:hover {
+  background-color: #ff0640b9;
+}
+.logos {
+  height: 20px;
+  width: 20px;
+}
