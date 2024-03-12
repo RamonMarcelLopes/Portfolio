@@ -28,10 +28,6 @@
   cursor: pointer;
 }
 
-.dropdown-menu li:hover {
-  background-color: #f8f9fa;
-}
-
 /* .dropdown:hover .dropdown-menu {
   display: block;
 } */
@@ -71,10 +67,6 @@
 .dropdown-menu li {
   padding: 8px 16px;
   cursor: pointer;
-}
-
-.dropdown-menu li:hover {
-  background-color: #f8f9fa;
 }
 
 .dropdown:hover .dropdown-menu {

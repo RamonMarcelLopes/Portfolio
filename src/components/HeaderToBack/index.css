@@ -106,7 +106,6 @@
   background-color: #03060f;
   border: 2px solid #fd0642;
   border-radius: 5px;
-  padding: 8px 0;
   margin: 0;
   position: absolute;
   top: calc(100% + 5px);
@@ -122,10 +121,13 @@
   padding: 0px 0px;
   cursor: pointer;
   width: 100%;
+  height: 20px;
+  transition-duration: 0.2s;
+  margin: 1px 0px 0px 0px;
 }
 
 .dropdown-menu li:hover {
-  background-color: #f8f9fa;
+  background-color: #ff0642;
 }
 
 .dropdown .dropdown-menu {
