@@ -1,7 +1,7 @@
 import './index.css';
 import * as W from '../../mocks/works';
-import git from '../../../public/git.svg';
-import web2 from '../../../public/web2.svg';
+import git from '/public/git.svg';
+import web2 from '/public/web2.svg';
 import { useState } from 'react';
 import { redirect } from 'react-router-dom';
 import Modal from 'react-modal';
