@@ -79,26 +79,22 @@ const WorkCard = ({
               <div className="imagesFromMap">
                 {technologiesFront?.map((tf: W.Technology) => {
                   return (
-                    <>
-                      <img
-                        className="imgTechnologyToShowOnModal"
-                        src={tf.img}
-                        alt={tf.name}
-                        key={tf.name}
-                      />
-                    </>
+                    <img
+                      className="imgTechnologyToShowOnModal"
+                      src={tf.img}
+                      alt={tf.name}
+                      key={tf.name}
+                    />
                   );
                 })}
                 {technologiesBack?.map((tb: W.Technology) => {
                   return (
-                    <>
-                      <img
-                        className="imgTechnologyToShowOnModal"
-                        src={tb.img}
-                        alt={tb.name}
-                        key={tb.name}
-                      />
-                    </>
+                    <img
+                      className="imgTechnologyToShowOnModal"
+                      src={tb.img}
+                      alt={tb.name}
+                      key={tb.name}
+                    />
                   );
                 })}
               </div>
