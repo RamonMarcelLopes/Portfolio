@@ -11,6 +11,9 @@ export type Texts = {
   Headerworks: string;
   Headercontact: string;
   meetMe: string;
+  myWorks: string;
+  seeMore: string;
+  technologiesUsed: string;
 };
 
 export let textsEN: Texts = {
@@ -26,6 +29,9 @@ export let textsEN: Texts = {
   Headerworks: 'Works',
   Headercontact: 'Contact',
   meetMe: 'Meet me',
+  myWorks: 'My Works',
+  seeMore: 'See More',
+  technologiesUsed: 'TECHNOLOGIES USED',
 };
 
 export let textsPT: Texts = {
@@ -41,4 +47,7 @@ export let textsPT: Texts = {
   Headerworks: 'Trabalhos',
   Headercontact: 'Contato',
   meetMe: 'Encontre-me ',
+  myWorks: 'Meus Trabalhos',
+  seeMore: 'Ver Mais ',
+  technologiesUsed: 'TECNOLOGIAS USADAS',
 };

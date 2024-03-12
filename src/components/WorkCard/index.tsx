@@ -1,10 +1,11 @@
 import './index.css';
 import * as W from '../../mocks/works';
-import git from '/public/git.svg';
-import web2 from '/public/web2.svg';
+import git from '../../public/git.svg';
+import web2 from '../../public/web2.svg';
 import { useState } from 'react';
 import { redirect } from 'react-router-dom';
 import Modal from 'react-modal';
+import { useLanguageContext } from '../../contexts/language';
 
 Modal.setAppElement('#root');
 const WorkCard = ({
@@ -16,6 +17,7 @@ const WorkCard = ({
   technologiesFront,
   technologiesBack,
 }: W.Work) => {
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   let handleClickGit = () => {
     window.open(github, '_blank');
   };
@@ -71,7 +73,9 @@ const WorkCard = ({
               </div>
             </div>
             <div className="containerUsedTechnologies">
-              <h4 className="h4UsedTechnologies">used technologies</h4>
+              <h4 className="h4UsedTechnologies">
+                {interfaceLanguage?.technologiesUsed}
+              </h4>
               <div className="imagesFromMap">
                 {technologiesFront?.map((tf: W.Technology) => {
                   return (
@@ -171,7 +175,7 @@ const WorkCard = ({
           </div>
           <div className="ContainerButton">
             <button className="seeMore" onClick={() => openModal()}>
-              See More
+              {interfaceLanguage?.seeMore}
             </button>
           </div>
         </div>

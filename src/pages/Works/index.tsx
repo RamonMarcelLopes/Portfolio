@@ -2,14 +2,17 @@ import Header from '../../components/HeaderToBack';
 import './index.css';
 import WorkCard from '../../components/WorkCard';
 import * as W from '../../mocks/works';
+import { useLanguageContext } from '../../contexts/language';
+
 const Works = () => {
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   return (
     <>
       <Header />
       <div className="containerAllWorks">
         <div className="ContainerTracado">
           <div className="TracadoWorks">.</div>
-          <h1 className="h1Myworks">{'My Works'}</h1>
+          <h1 className="h1Myworks">{interfaceLanguage?.myWorks}</h1>
           <div className="TracadoWorks">.</div>
         </div>
         <div className="MyWorksDisplay">
