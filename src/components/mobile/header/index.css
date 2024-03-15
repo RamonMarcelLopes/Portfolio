@@ -1,0 +1,40 @@
+.headercontainerMobile {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #03060f;
+  border-bottom: 1px solid black;
+}
+.letterRContainerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff0642;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  color: #ff0642;
+  cursor: pointer;
+}
+.letterRmobile {
+  font-size: 250%;
+}
+.containerOptionsMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff0642;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  color: #ff0642;
+  font-size: 250%;
+}
+@media (min-width: 416px) and (min-height: 921px) {
+  .headercontainerMobile {
+    display: none;
+  }
+}

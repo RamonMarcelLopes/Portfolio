@@ -3,12 +3,14 @@ import Header from '../../components/HeaderToBack';
 import './index.css';
 import { useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';
+import HeaderMobile from '../../components/mobile/header';
 
 const Home = () => {
   let { interfaceLanguage } = useLanguageContext() ?? {};
   let navigate: NavigateFunction = useNavigate();
   return (
     <>
+      <HeaderMobile />
       <Header />
       <div className="HomeContainer">
         <div className="containerInformation">
