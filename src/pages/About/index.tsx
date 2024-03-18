@@ -1,10 +1,12 @@
 import './index.css';
 import Header from '../../components/HeaderToBack';
 import { useLanguageContext } from '../../contexts/language';
+import HeaderMobile from '../../components/mobile/header';
 const About = () => {
   let { interfaceLanguage } = useLanguageContext() ?? {};
   return (
     <>
+      <HeaderMobile />
       <Header />
       <div className="AboutContainer">
         <div className="AboutTitleContainer">
@@ -30,10 +32,6 @@ const About = () => {
               nibh fames amet nunc. Amet tellus tortor lacus volutpat consequat
               adipiscing urna consectetur vehicula. Duis turpis et semper mauris
               at. Facilisis erat pharetra quam fusce auctor cras feugiat.
-              Blandit curabitur ut elit viverra luctus montes morbi elementum
-              leo. Adipiscing cras nec diam bibendum ullamcorper sed turpis.
-              Nibh potenti mauris adipiscing fermentum fermentum vehicula diam
-              vitae lectus.
             </h3>
           </div>
         </div>
