@@ -19,7 +19,7 @@ const Home = () => {
               <span>{interfaceLanguage?.helloText} </span>
             </div>
             <div className="containerNameHome">
-              <h1>Ramon Lopes</h1>
+              <h1 className="NameH1">Ramon Lopes</h1>
             </div>
             <div className="containerStack">
               <h2>{interfaceLanguage?.stackText}</h2>
@@ -30,10 +30,6 @@ const Home = () => {
                 finibus fermentum nisi aliquam eleifend. Nunc metus arcu,
                 pretium vitae lorem et, fringilla placerat nunc. Pellentesque
                 condimentum commodo imperdiet. Nam volutpat augue tortor, nec
-                commodo nisl cursus sit amet. Nulla at vulputate justo. Sed
-                vitae nibh pulvinar, lacinia ex vestibulum, feugiat neque. Duis
-                ullamcorper efficitur fermentum. Duis et ultrices orci. Cras
-                euismod sapien vehicula erat egestas lobortis. Quisque dictum
               </h3>
             </div>
             <div className="containerButton">

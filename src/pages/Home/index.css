@@ -168,3 +168,77 @@
     font-size: 100%;
   }
 }
+
+@media (max-width: 415px) and (max-height: 920px) {
+  .HomeContainer {
+    width: 414px;
+    height: 919px;
+    display: flex;
+  }
+  .containerInformation {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .textInf {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NameH1 {
+    font-size: 150%;
+  }
+  .phraseHello {
+    height: 10%;
+    width: 100%;
+  }
+  .containerNameHome {
+    height: 10%;
+  }
+  .containerStack {
+    height: 10%;
+  }
+  .containerInformationText {
+    height: 30%;
+  }
+  .h3AboutInformation {
+    font-size: 100%;
+  }
+  .image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .boxShadow {
+    height: 85%;
+  }
+  .containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .meetButton {
+    height: 60%;
+  }
+  .boxShadow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 10px;
+    height: 70%;
+    width: 70%;
+    -webkit-box-shadow: -5px -5px 10px -6px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+    box-shadow: -1px -5px 20px -5px rgba(255, 255, 255, 1);
+  }
+  .myimage {
+    height: 99.9%;
+    width: 99.9%;
+  }
+}
