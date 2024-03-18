@@ -3,6 +3,7 @@ import * as T from '../../mocks/skills';
 import Header from '../../components/HeaderToBack';
 import { useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';
+import HeaderMobile from '../../components/mobile/header';
 const Skills = () => {
   let sk: T.Technology[] = T.technology;
   let { interfaceLanguage } = useLanguageContext() ?? {};
@@ -10,6 +11,7 @@ const Skills = () => {
 
   return (
     <>
+      <HeaderMobile />
       <Header />
       <div className="containerAllSkills">
         <div className="mySkillsTitleContainer">
