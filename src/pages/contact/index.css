@@ -113,3 +113,20 @@ a:visited {
     width: 70%;
   }
 }
+@media (max-width: 431px) and (max-height: 935px) {
+  .FullContainerContact {
+    width: 430px;
+    height: 919px;
+  }
+  .Tracado {
+    display: none;
+  }
+  .ContainerContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .InformationContactContainer {
+    width: 90%;
+  }
+}

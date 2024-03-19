@@ -1,6 +1,7 @@
 import './index.css';
 import Header from '../../components/HeaderToBack';
 import { useLanguageContext } from '../../contexts/language';
+import HeaderMobile from '../../components/mobile/header';
 
 const Contact = () => {
   let { interfaceLanguage } = useLanguageContext() ?? {};
@@ -10,13 +11,14 @@ const Contact = () => {
     window.open(link);
   };
   let sendWhats = () => {
-    const numero = '42999952003';
+    const numero = '+5542999952003';
     const link = `https://wa.me/${numero}`;
     window.open(link);
   };
 
   return (
     <>
+      <HeaderMobile />
       <Header />
       <div className="FullContainerContact">
         <div className="ContainerContact">
@@ -59,7 +61,7 @@ const Contact = () => {
                 alt=""
               />
               <h2 className="canClick" onClick={sendWhats}>
-                (42) 999952003
+                +55(42)999952003
               </h2>
             </div>
           </div>
