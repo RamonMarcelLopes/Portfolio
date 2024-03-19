@@ -27,7 +27,7 @@ const WorkCard = ({
       : console.log(
           `sorry we don't have deploy for this app, opening see more `
         ),
-      openModal();
+      hasDeploy ? null : openModal();
   };
   let [transition, setTransition] = useState('');
 
@@ -111,10 +111,13 @@ const WorkCard = ({
                 GitHub
                 <img className="logos" src={git} alt="icon of github" />
               </button>
-              <button onClick={handleClickDeploy} className="buttonLink">
-                Deploy
-                <img className="logos" src={web2} alt="random icon of web" />
-              </button>
+
+              {hasDeploy ? (
+                <button onClick={handleClickDeploy} className="buttonLink">
+                  Deploy
+                  <img className="logos" src={web2} alt="random icon of web" />
+                </button>
+              ) : null}
             </div>
           </div>
         </div>

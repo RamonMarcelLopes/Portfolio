@@ -263,11 +263,11 @@
 }
 .containerButtonGitDeploy {
   height: 20%;
-
   margin: 10px 0px 0px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20%;
 }
 .buttonLink {
   height: 50%;
