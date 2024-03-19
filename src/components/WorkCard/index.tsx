@@ -101,10 +101,9 @@ const WorkCard = ({
             </div>
             <div className="containerDescriptionProject">
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                debitis optio iste, perferendis magni voluptas quis, quo tempore
-                accusamus ea autem fuga sequi. Velit blanditiis ut sed, vitae
-                aut nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                praesentium quia adipisci amet hic in tempore sapiente rerum
+                provident reprehenderit accusamus
               </span>
             </div>
             <div className="containerButtonGitDeploy">
