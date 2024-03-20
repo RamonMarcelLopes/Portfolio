@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import SideBarMobile from '../sidebar';
 const HeaderMobile = () => {
   let navigate = useNavigate();
-  const [isActive, setIsActive] = useState('false');
+  const [isActive, setIsActive] = useState('');
   let handleClickSidebar = () => {
     setIsActive('active');
   };
@@ -14,6 +14,12 @@ const HeaderMobile = () => {
 
   return (
     <>
+      <div
+        className={`blackBackground ${
+          isActive == 'active' ? 'active' : 'none'
+        }`}
+        onClick={() => setIsActive('')}
+      ></div>
       <div className={`sideBar ${isActive}`}>
         <SideBarMobile close={handleCloseSideBar} />
       </div>
