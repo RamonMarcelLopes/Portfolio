@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import SideBarMobile from '../sidebar';
 const HeaderMobile = () => {
   let navigate = useNavigate();
-  const [isActive, setIsActive] = useState('active');
+  const [isActive, setIsActive] = useState('false');
   let handleClickSidebar = () => {
     setIsActive('active');
   };
