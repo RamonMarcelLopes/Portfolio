@@ -32,10 +32,30 @@
   border-radius: 5px;
   color: #ff0642;
   font-size: 250%;
+  cursor: pointer;
 }
 
 @media (min-width: 767px) {
   .headercontainerMobile {
     display: none;
   }
+}
+.sideBar {
+  display: none;
+  padding: 3%;
+  position: absolute;
+  right: -400px;
+  background-color: #03060f;
+  height: 100%;
+  width: 75%;
+  border-left: 1px solid #ff0642;
+  border-bottom: 1px solid #ff0642;
+  border-top: 1px solid #ff0642;
+  border-radius: 10px 0px 0px 10px;
+  transition: right 0.3s ease;
+  z-index: 10;
+}
+.active {
+  display: flex;
+  right: 0; /* Quando a classe 'active' é adicionada, a barra lateral se move para a posição direita 0 */
 }
