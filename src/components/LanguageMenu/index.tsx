@@ -1,4 +1,9 @@
-import React, { ReactEventHandler, SyntheticEvent, useState } from 'react';
+import React, {
+  ReactEventHandler,
+  SyntheticEvent,
+  useEffect,
+  useState,
+} from 'react';
 import { useLanguageContext } from '../../contexts/language';
 
 const DropDownMenu = () => {
@@ -16,11 +21,13 @@ const DropDownMenu = () => {
     setIdiomaSelecionado(idioma);
     setMenuAberto(false);
   };
-  if (idiomaSelecionado == 'en-US') {
-    changeLanguage(2);
-  } else if (idiomaSelecionado == 'pt-BR') {
-    changeLanguage(1);
-  }
+  useEffect(() => {
+    if (idiomaSelecionado === 'en-US') {
+      changeLanguage(2);
+    } else if (idiomaSelecionado === 'pt-BR') {
+      changeLanguage(1);
+    }
+  }, [idiomaSelecionado]);
 
   return (
     <div className="dropdown">

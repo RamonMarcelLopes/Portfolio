@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import x from '../../../public/x.svg';
 import './index.css';
 import { useLanguageContext } from '../../../contexts/language';
+import DropDownMenu from '../../LanguageMenu';
 type closeProp = {
   close: (param: string) => void;
 };
@@ -46,7 +47,9 @@ const SideBarMobile = ({ close }: closeProp) => {
             </h1>
           </div>
         </div>
-        <div className="ContainerLanguages">coming soon</div>
+        <div className="ContainerLanguages">
+          <DropDownMenu />
+        </div>
       </div>
     </>
   );
