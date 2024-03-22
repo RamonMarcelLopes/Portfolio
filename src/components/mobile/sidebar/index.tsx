@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import x from '../../../public/x.svg';
 import './index.css';
+import { useLanguageContext } from '../../../contexts/language';
 type closeProp = {
   close: (param: string) => void;
 };
@@ -9,6 +10,7 @@ const SideBarMobile = ({ close }: closeProp) => {
     close('');
   };
   let navigate = useNavigate();
+  let { interfaceLanguage } = useLanguageContext() ?? {};
   return (
     <>
       <div className="containerSideBar">
@@ -20,27 +22,27 @@ const SideBarMobile = ({ close }: closeProp) => {
         <div className="containerAllOptions">
           <div className="optionContainer">
             <h1 className="sideBarH1" onClick={() => navigate('/')}>
-              Home
+              {interfaceLanguage?.Headerhome}
             </h1>
           </div>
           <div className="optionContainer">
             <h1 className="sideBarH1" onClick={() => navigate('/about')}>
-              About
+              {interfaceLanguage?.Headerabout}
             </h1>
           </div>
           <div className="optionContainer">
             <h1 className="sideBarH1" onClick={() => navigate('/skills')}>
-              Skills
+              {interfaceLanguage?.Headerskills}
             </h1>
           </div>
           <div className="optionContainer">
             <h1 className="sideBarH1" onClick={() => navigate('/works')}>
-              Works
+              {interfaceLanguage?.Headerworks}
             </h1>
           </div>
           <div className="optionContainer">
             <h1 className="sideBarH1" onClick={() => navigate('/contact')}>
-              Contact
+              {interfaceLanguage?.Headercontact}
             </h1>
           </div>
         </div>
