@@ -13,7 +13,7 @@
 .AboutTitleContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 77%;
   height: 10%;
   color: #fff;
@@ -23,6 +23,7 @@
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
 }
+
 .tracado {
   background-color: #555f65;
   width: 30%;
@@ -127,7 +128,7 @@
     align-items: center;
   }
   .About {
-    font-size: 150%;
+    font-size: 35px;
   }
   .ImageContainer {
     width: 80%;

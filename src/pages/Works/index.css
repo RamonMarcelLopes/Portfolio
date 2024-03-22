@@ -54,4 +54,7 @@
     height: 70%;
     overflow: auto;
   }
+  .h1Myworks {
+    font-size: 35px;
+  }
 }

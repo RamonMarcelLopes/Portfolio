@@ -10,9 +10,7 @@ const About = () => {
       <Header />
       <div className="AboutContainer">
         <div className="AboutTitleContainer">
-          <div className="tracado"></div>
           <h1 className="About">{interfaceLanguage?.about}</h1>
-          <div className="tracado"></div>
         </div>
         <div className="ImageAndInformationContainer">
           <div className="ImageContainer">
