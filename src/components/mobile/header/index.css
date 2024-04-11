@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1170px) {
   .headercontainerMobile {
     display: none;
   }

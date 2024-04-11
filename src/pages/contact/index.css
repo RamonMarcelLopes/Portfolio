@@ -88,7 +88,7 @@ a:visited {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1440px) and (max-height: 900px) {
+@media screen and (max-width: 1440px) {
   /* .FullContainerContact {
     width: 1440px;
     height: 900px;
@@ -98,7 +98,7 @@ a:visited {
     width: 50%;
   }
 }
-@media screen and (max-width: 768px) and (max-height: 1024px) {
+@media screen and (max-width: 768px) {
   /* .FullContainerContact {
     height: 1024px;
     width: 768px;
@@ -113,7 +113,7 @@ a:visited {
     width: 70%;
   }
 }
-@media (max-width: 431px) and (max-height: 935px) {
+@media (max-width: 431px) {
   /* .FullContainerContact {
     width: 430px;
     height: 919px;

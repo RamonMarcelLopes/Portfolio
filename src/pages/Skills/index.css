@@ -36,13 +36,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  overflow: auto;
 }
 .imgIc {
   height: 120px;
   width: 120px;
   margin: 2%;
 }
-@media screen and (max-width: 1440px) and (max-height: 900px) {
+@media screen and (max-width: 1440px) {
   /* .containerAllSkills {
     width: 1440px;
     height: 900px;
@@ -51,7 +52,7 @@
     font-size: 30px;
   }
 }
-@media screen and (max-width: 768px) and (max-height: 1024px) {
+@media screen and (max-width: 768px) {
   /* .containerAllSkills {
     height: 1024px;
     width: 768px;
@@ -69,7 +70,7 @@
     font-size: 28px;
   }
 }
-@media (max-width: 431px) and (max-height: 935px) {
+@media (max-width: 431px) {
   .containerAllSkills {
     /* width: 430px;
     height: 919px; */
