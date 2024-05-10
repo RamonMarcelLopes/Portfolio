@@ -16,7 +16,7 @@ const About = () => {
           <div className="ImageContainer">
             <div className="imgTracado">
               <img
-                src="https://jacaimages.vercel.app/imgs/miscellaneous/peackyblinder.png"
+                src="https://jacaimages.vercel.app/imgs/miscellaneous/ramon.jpeg"
                 alt=""
                 className="My-img"
               />
