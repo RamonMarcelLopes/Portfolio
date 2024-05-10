@@ -45,7 +45,7 @@ const Home = () => {
             <div className="boxShadow">
               <img
                 className="myimage"
-                src="https://jacaimages.vercel.app/imgs/miscellaneous/peackyblinder.png"
+                src="https://jacaimages.vercel.app/imgs/miscellaneous/ramon.jpeg"
                 alt="imagem do Ramon"
               />
             </div>

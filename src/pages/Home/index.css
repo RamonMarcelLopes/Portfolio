@@ -16,7 +16,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   gap: 5%;
 }
 .textInf {
@@ -94,14 +94,16 @@
 }
 .myimage {
   border-radius: 10px;
+  height: 99%;
+  width: 98%;
 }
 .boxShadow {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
   border-radius: 10px;
-  height: 58%;
-  width: 70%;
+  height: 80%;
+  width: 46%;
   -webkit-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
   -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
   box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
@@ -111,16 +113,20 @@
     height: 900px;
     width: 1440px;
   } */
+  .myimage {
+    height: 99%;
+    width: 99%;
+  }
   .meetButton {
     width: 25%;
   }
   .boxShadow {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     border-radius: 10px;
     height: 70%;
-    width: 93%;
+    width: 55%;
     -webkit-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
     -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
     box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
@@ -131,8 +137,8 @@
 }
 @media screen and (max-width: 1425px) {
   .myimage {
-    height: 95%;
-    width: 95%;
+    height: 99%;
+    width: 99%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -149,8 +155,19 @@
     height: 70%;
   }
   .myimage {
-    height: 95%;
-    width: 95%;
+    height: 99%;
+    width: 99%;
+  }
+  .boxShadow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 10px;
+    height: 70%;
+    width: 55%;
+    -webkit-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
+    box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
   }
   .textInf {
     display: flex;
@@ -235,16 +252,16 @@
   .boxShadow {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     border-radius: 10px;
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 40%;
     -webkit-box-shadow: -5px -5px 10px -6px rgba(255, 255, 255, 1);
     -moz-box-shadow: -5px -5px 20px -6px rgba(255, 255, 255, 1);
     box-shadow: -1px -5px 20px -5px rgba(255, 255, 255, 1);
   }
   .myimage {
-    height: 99.9%;
-    width: 99.9%;
+    height: 99%;
+    width: 99%;
   }
 }
