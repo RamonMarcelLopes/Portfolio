@@ -74,11 +74,10 @@
 }
 @media (max-width: 431px) {
   .containerAllSkills {
-    /* width: 430px;
-    height: 919px; */
+    justify-content: center;
     align-items: center;
-    height: 99vh;
-    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
     display: flex;
     ::-webkit-scrollbar {
       width: 0.5px;
@@ -87,6 +86,6 @@
   .mySkills {
     display: flex;
     gap: 30px;
-    height: 65%;
+    height: 75vh;
   }
 }
