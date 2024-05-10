@@ -39,10 +39,10 @@
   flex-wrap: wrap;
 }
 @media (max-width: 431px) {
-  /* .containerAllWorks {
-    width: 430px;
-    height: 919px;
-  } */
+  .containerAllWorks {
+    justify-content: flex-start;
+    height: 100vh;
+  }
   .TracadoWorks {
     display: none;
   }
@@ -53,7 +53,7 @@
   }
   .MyWorksDisplay {
     width: 90%;
-    height: 70%;
+    height: 80vh;
     overflow: auto;
   }
   .h1Myworks {

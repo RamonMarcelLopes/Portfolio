@@ -76,6 +76,9 @@
   .containerAllSkills {
     /* width: 430px;
     height: 919px; */
+    align-items: center;
+    height: 99vh;
+    justify-content: flex-start;
     display: flex;
     ::-webkit-scrollbar {
       width: 0.5px;
