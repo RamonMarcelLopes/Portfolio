@@ -9,6 +9,8 @@
   align-items: center;
   background-color: #03060f;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .ContainerTracado {
   display: flex;
