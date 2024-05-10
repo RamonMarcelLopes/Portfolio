@@ -6,6 +6,7 @@
   background-color: #03060f;
   display: flex;
   align-items: center;
+  padding: 100px 0px;
   flex-direction: column;
   gap: 5%;
 }
