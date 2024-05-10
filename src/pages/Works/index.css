@@ -40,8 +40,9 @@
 }
 @media (max-width: 431px) {
   .containerAllWorks {
-    justify-content: flex-start;
-    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   .TracadoWorks {
     display: none;
@@ -53,7 +54,7 @@
   }
   .MyWorksDisplay {
     width: 90%;
-    height: 80vh;
+    height: 75vh;
     overflow: auto;
   }
   .h1Myworks {
