@@ -36,7 +36,7 @@ const Contact = () => {
                 className="LnImg"
                 src="https://skillicons.dev/icons?i=gmail"
               />
-              <h2 className="canClick" onClick={sendEmail}>
+              <h2 className="canClick mail" onClick={sendEmail}>
                 ramonlopesdev@gmail.com
               </h2>
             </div>

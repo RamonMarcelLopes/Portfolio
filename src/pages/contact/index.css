@@ -54,6 +54,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 .LnImg {
   height: 40px;
@@ -72,6 +74,9 @@
   color: #555f65;
   transition-duration: 0.5s;
   text-decoration: underline;
+}
+.LnContainer {
+  text-overflow: ellipsis;
 }
 .canClick:hover {
   color: #fff;
@@ -122,11 +127,16 @@ a:visited {
   .Tracado {
     display: none;
   }
+  .mail {
+    text-overflow: ellipsis;
+  }
   .ContainerContact {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-overflow: ellipsis;
   }
+
   .InformationContactContainer {
     width: 90%;
   }
