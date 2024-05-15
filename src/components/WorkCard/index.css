@@ -311,7 +311,7 @@
   .modal-content {
     display: flex;
     width: 90%;
-    height: 70%;
+    height: 80vh;
   }
   .containerAllModal {
     display: flex;
@@ -335,6 +335,7 @@
   .imgForModal {
     height: auto;
     width: 100%;
+    max-height: 210px;
   }
   .informationModalContainer {
     height: 60%;
