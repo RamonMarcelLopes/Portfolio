@@ -29,6 +29,7 @@ const Works = () => {
                 technologiesFront={e.technologiesFront}
                 key={e.id}
                 technologiesBack={e.technologiesBack}
+                description={e.description}
                 id={e.id}
               />
             );

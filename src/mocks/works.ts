@@ -10,6 +10,7 @@ export type Work = {
   github: URL | string;
   hasDeploy: boolean;
   deployLink: URL | string;
+  description: string;
   technologiesFront?: Technology[];
   technologiesBack?: Technology[];
 };
@@ -22,6 +23,8 @@ export const works: Work[] = [
     github: 'https://github.com/images-organization/myimages',
     hasDeploy: true,
     deployLink: 'https://jacaimages.vercel.app',
+    description:
+      'Minha galeria para garantir que as imagens utilizadas nos meus projetos provenham de uma fonte sobre a qual eu tenha controle e autoridade.',
     technologiesFront: [
       {
         name: 'HTML5',
@@ -48,6 +51,9 @@ export const works: Work[] = [
       'https://github.com/RamonMarcelLopes/projeto-finalM3-front-react/tree/ReworkTypeScript',
     hasDeploy: true,
     deployLink: 'https://elgeladontypescript.vercel.app',
+    description: ` O projeto El Geladon  
+    visa criar uma plataforma virtual que simula a experiência de
+     uma paleteria tradicional, oferecendo uma variedade de Paletas para os clientes.`,
     technologiesFront: [
       {
         name: 'REACT',
@@ -80,6 +86,9 @@ export const works: Work[] = [
     github: 'https://github.com/RamonMarcelLopes/Xbox-hud-nestTS',
     hasDeploy: false,
     deployLink: '',
+    description: `O projeto Xbox tem como objetivo
+       replicar os principais componentes
+      do sistema de back-end do console Xbox`,
     technologiesFront: [],
     technologiesBack: [
       {

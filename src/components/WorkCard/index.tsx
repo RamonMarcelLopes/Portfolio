@@ -16,6 +16,7 @@ const WorkCard = ({
   deployLink,
   technologiesFront,
   technologiesBack,
+  description,
 }: W.Work) => {
   let { interfaceLanguage } = useLanguageContext() ?? {};
   let handleClickGit = () => {
@@ -101,11 +102,7 @@ const WorkCard = ({
               </div>
             </div>
             <div className="containerDescriptionProject">
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                praesentium quia adipisci amet hic in tempore sapiente rerum
-                provident reprehenderit accusamus
-              </span>
+              <span>{description}</span>
             </div>
             <div className="containerButtonGitDeploy">
               <button onClick={handleClickGit} className="buttonLink">
