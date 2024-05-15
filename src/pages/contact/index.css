@@ -22,6 +22,8 @@
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
+  text-wrap: nowrap;
+  margin: 0px 15px;
 }
 .Tracado {
   background-color: #555f65;

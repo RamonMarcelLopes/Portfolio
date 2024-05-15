@@ -61,6 +61,7 @@ const WorkCard = ({
               src={img}
               alt={`imagem do projeto ${title}`}
               className="imgForModal"
+              onClick={() => window.open(img, '_blank')}
             />
           </div>
           <div className="informationModalContainer">

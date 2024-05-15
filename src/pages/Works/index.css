@@ -29,6 +29,8 @@
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
+  text-wrap: nowrap;
+  margin: 0px 15px;
 }
 .MyWorksDisplay {
   width: 70%;
@@ -37,6 +39,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow: auto;
 }
 @media (max-width: 431px) {
   .containerAllWorks {
