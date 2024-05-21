@@ -26,10 +26,7 @@ const Home = () => {
             </div>
             <div className="containerInformationText">
               <h3 className="h3AboutInformation">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                finibus fermentum nisi aliquam eleifend. Nunc metus arcu,
-                pretium vitae lorem et, fringilla placerat nunc. Pellentesque
-                condimentum commodo imperdiet. Nam volutpat augue tortor, nec
+                {interfaceLanguage?.homeDesc}
               </h3>
             </div>
             <div className="containerButton">

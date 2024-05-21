@@ -14,6 +14,8 @@ export type Texts = {
   myWorks: string;
   seeMore: string;
   technologiesUsed: string;
+  homeDesc: string;
+  aboutDesc: string;
 };
 
 export let textsEN: Texts = {
@@ -32,6 +34,10 @@ export let textsEN: Texts = {
   myWorks: 'My Works',
   seeMore: 'See More',
   technologiesUsed: 'TECHNOLOGIES USED',
+  homeDesc:
+    'Full Stack Developer with experience in web development, a technology enthusiast always seeking personal and professional improvement. Currently focused on development using JavaScript, TypeScript, React, NodeJS, MongoDB, PostgreSQL, among other technologies.  ',
+  aboutDesc: `Hello, my name is Ramon Lopes. I am passionate about technology and the art of transforming ideas into reality through code. Since completing high school, I have immersed myself in the world of programming and discovered a true vocation as a fullstack developer.
+  In addition to my interest in technology, I enjoy spending my free time exploring new cultures and learning about different ways of thinking and living. I believe that this curiosity and openness to new experiences help me become a more empathetic and creative person, both personally and professionally.`,
 };
 
 export let textsPT: Texts = {
@@ -50,4 +56,7 @@ export let textsPT: Texts = {
   myWorks: 'Meus Trabalhos',
   seeMore: 'Ver Mais ',
   technologiesUsed: 'TECNOLOGIAS USADAS',
+  homeDesc:
+    'Desenvolvedor Full Stack, com experiência em desenvolvimento web, entusiasta de tecnologia buscando sempre o aperfeiçoamento pessoal e profissional. Atualmente com foco em desenvolvimento utilizando JavaScript, TypeScript, React, NodeJS, MongoDB, PostgreSQL dentre outras tecnologias.',
+  aboutDesc: `Olá, meu nome é Ramon Lopes. Sou um apaixonado por tecnologia e pela arte de transformar ideias em realidade através do código. Desde que completei o ensino médio, mergulhei no mundo da programação e descobri uma verdadeira vocação como programador fullstack. Além do meu interesse por tecnologia, gosto de passar meu tempo livre explorando novas culturas e aprendendo sobre diferentes formas de pensar e viver. Acredito que essa curiosidade e abertura ao novo me ajudam a ser uma pessoa mais empática e criativa, tanto na vida pessoal quanto profissional.`,
 };
