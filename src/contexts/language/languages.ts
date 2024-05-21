@@ -23,7 +23,7 @@ export let textsEN: Texts = {
   contactMe: 'Contact me',
   mycontact: 'My Contacts',
   helloText: 'Hello, My name is ',
-  stackText: ' full-stack developer',
+  stackText: ' Full-stack developer',
   skills: 'My Skills',
   Headerhome: 'Home',
   Headerabout: 'About',
