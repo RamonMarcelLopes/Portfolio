@@ -45,7 +45,7 @@ export let textsPT: Texts = {
   contactMe: 'Contate me',
   mycontact: 'Meus contatos',
   helloText: 'Olá, meu nome é',
-  stackText: 'Um desenvolvedor full-stack',
+  stackText: ' desenvolvedor full-stack',
   skills: 'Minhas Proficiências',
   Headerhome: 'Inicio',
   Headerabout: 'Sobre',
