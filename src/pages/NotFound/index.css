@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Concert+One:regular);
+.notFoundContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #03060f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image404 {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+.h1BackToHome {
+  font-family: 'Concert One';
+  font-size: 37px;
+  position: absolute;
+  bottom: 30%;
+  transition-duration: 1s;
+  cursor: pointer;
+  color: aliceblue;
+  user-select: none;
+}
+.h1BackToHome:hover {
+  transform: scale(1.01);
+  color: rgb(202, 214, 225);
+}
