@@ -9,18 +9,6 @@
     width: 0.5px;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #03060f; /* Cor de fundo do track */
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #03060f;
-    border-radius: 0.5px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #03060f;
-  }
   scrollbar-width: thin;
-  scrollbar-color: #03060f #03060f;
+  scrollbar-color: #fd0642 #03060f;
 }

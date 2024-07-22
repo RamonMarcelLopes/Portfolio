@@ -33,7 +33,7 @@
   margin: 0px 15px;
 }
 .MyWorksDisplay {
-  width: 70%;
+  width: 80%;
   height: 60%;
   display: flex;
   justify-content: center;
@@ -41,6 +41,7 @@
   flex-wrap: wrap;
   overflow: auto;
 }
+
 @media (max-width: 431px) {
   .containerAllWorks {
     justify-content: center;

@@ -41,6 +41,7 @@
   justify-content: center;
   border-radius: 10px;
   overflow: auto;
+  scrollbar-color: #a4a5ac #03060f;
 }
 .imgIc {
   height: 120px;
