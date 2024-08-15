@@ -16,33 +16,33 @@ export type Work = {
 };
 
 export const works: Work[] = [
-  {
-    id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
-    title: 'Jaca gallery',
-    img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
-    github: 'https://github.com/images-organization/myimages',
-    hasDeploy: true,
-    deployLink: 'https://jacaimages.vercel.app',
-    description:
-      'Minha galeria para garantir que as imagens utilizadas nos meus projetos provenham de uma fonte sobre a qual eu tenha controle e autoridade.',
-    technologiesFront: [
-      {
-        name: 'HTML5',
-        img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg',
-      },
+  // {
+  //   id: '3b5e9c2d-3f3f-42e2-8b49-051e1a945f57',
+  //   title: 'Jaca gallery',
+  //   img: 'https://github.com/images-organization/myimages/blob/main/imgs/miscellaneous/gallery.png?raw=true',
+  //   github: 'https://github.com/images-organization/myimages',
+  //   hasDeploy: true,
+  //   deployLink: 'https://jacaimages.vercel.app',
+  //   description:
+  //     'Minha galeria para garantir que as imagens utilizadas nos meus projetos provenham de uma fonte sobre a qual eu tenha controle e autoridade.',
+  //   technologiesFront: [
+  //     {
+  //       name: 'HTML5',
+  //       img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg',
+  //     },
 
-      {
-        name: 'CSS3',
-        img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg',
-      },
-    ],
-    technologiesBack: [
-      {
-        name: 'javaScript',
-        img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg',
-      },
-    ],
-  },
+  //     {
+  //       name: 'CSS3',
+  //       img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg',
+  //     },
+  //   ],
+  //   technologiesBack: [
+  //     {
+  //       name: 'javaScript',
+  //       img: 'https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg',
+  //     },
+  //   ],
+  // },
   {
     id: 'FAWWdjfsENf',
     title: 'El Geladon ',
