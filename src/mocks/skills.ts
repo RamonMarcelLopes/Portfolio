@@ -63,7 +63,7 @@ export let technology: Technology[] = [
   {
     id: '5a3c9d8e',
     name: 'Axios',
-    img: 'https://camo.githubusercontent.com/e8c00151cbd87c50b91d389b98160d268f860b44a25dbae7f8d34358496525b0/68747470733a2f2f75706c6f61642e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6178696f732f696d616765732f65326161653363312d663938642d343530622d383430362d3531336262356536643564612e737667',
+    img: 'https://files.svgcdn.io/logos/axios.png',
   },
   {
     id: '0b7e6f51',
@@ -78,7 +78,7 @@ export let technology: Technology[] = [
   {
     id: '4f6b7a8c',
     name: 'Styled Components',
-    img: 'https://camo.githubusercontent.com/e84c6934fd475a5f859bd47d3b9cebea2537f7e83c77182bd5c85ba09ec96cc0/68747470733a2f2f7777772e7374796c65642d636f6d706f6e656e74732e636f6d2f61746f6d2e706e67',
+    img: 'https://www.styled-components.com/atom.png',
   },
   {
     id: 'e1d3f2a5',
@@ -88,6 +88,6 @@ export let technology: Technology[] = [
   {
     id: '8c9a1b2d',
     name: 'Discord.js',
-    img: 'https://camo.githubusercontent.com/54d943f6a48b42863ba906b3ed4685d7b671e23ace2060463a3fb19b5b8915b7/68747470733a2f2f692e696d6775722e636f6d2f3277666b5a4e302e706e67',
+    img: 'https://avatars.githubusercontent.com/u/26492485?s=200&v=4',
   },
 ];
