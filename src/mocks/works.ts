@@ -57,7 +57,7 @@ export const works: Work[] = [
     technologiesFront: [
       {
         name: "REACT",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/React-Dark.svg",
       },
 
       {
@@ -70,7 +70,7 @@ export const works: Work[] = [
       },
       {
         name: "Vite",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Vite-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/Vite-Dark.svg",
       },
       {
         name: "Type script",
@@ -124,7 +124,7 @@ export const works: Work[] = [
     technologiesFront: [
       {
         name: "REACT",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/React-Dark.svg",
       },
 
       {
@@ -137,7 +137,7 @@ export const works: Work[] = [
       },
       {
         name: "Vite",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Vite-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/Vite-Dark.svg",
       },
       {
         name: "Type script",
@@ -190,7 +190,7 @@ Usuários podem criar, editar, deletar e resgatar emblemas aleatórios`,
     technologiesFront: [
       {
         name: "REACT",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/React-Dark.svg",
       },
 
       {
@@ -199,7 +199,7 @@ Usuários podem criar, editar, deletar e resgatar emblemas aleatórios`,
       },
       {
         name: "Vite",
-        img: "https://github.com/tandpfun/skill-icons/raw/main/icons/Vite-Dark.svg",
+        img: "https://jacaimages.vercel.app/imgs/technologies/Vite-Dark.svg",
       },
       {
         name: "Type script",
